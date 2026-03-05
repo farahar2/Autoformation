@@ -17,7 +17,7 @@ $friends = [
 
 $sum = 0;
 
-foreach($friends as $key => $value){
+foreach($friends as $name => $money){
     $sum += $value;
 
     if($value > 100){
