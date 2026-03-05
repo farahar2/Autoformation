@@ -4,9 +4,9 @@
         <attribute name="name" value="algorithm"/>
         <attribute name="authors" value="hp"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-03-05 12:10:23 "/>
+        <attribute name="saved" value="2026-03-05 12:36:10 "/>
         <attribute name="created" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjExOjQyOjE3ICI7MjQ2NA=="/>
-        <attribute name="edited" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjEyOjEwOjIzICI7MTsyNTY1"/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjEyOjM2OjEwICI7MjsyNTcw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -20,7 +20,7 @@
                     <assign variable="price" expression="20"/>
                 </then>
                 <else>
-                    <if expression="age&gt;=12 and age&lt;=18">
+                    <if expression="age&gt;=12 AND age&lt;=18">
                         <then>
                             <assign variable="price" expression="40"/>
                         </then>
@@ -37,7 +37,7 @@
                     </if>
                 </else>
             </if>
-            <output expression="price" newline="True"/>
+            <output expression="&quot;Le prix du ticket est : &quot; &amp; price" newline="True"/>
         </body>
     </function>
 </flowgorithm>
