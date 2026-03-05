@@ -4,9 +4,9 @@
         <attribute name="name" value="algorithm1"/>
         <attribute name="authors" value="hp"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-03-05 02:49:43 "/>
+        <attribute name="saved" value="2026-03-05 03:00:43 "/>
         <attribute name="created" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjAyOjM2OjIyICI7MjQ2Mw=="/>
-        <attribute name="edited" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjAyOjQ5OjQzICI7MTsyNTc4"/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjAzOjAwOjQzICI7MjsyNTY3"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -27,7 +27,7 @@
                 <else>
                     <if expression="nombreThe &gt; 5">
                         <then>
-                            <assign variable="prixTotal" expression="prixBrut * nombreThe"/>
+                            <assign variable="prixTotal" expression="prixBrut - nombreThe"/>
                         </then>
                         <else>
                             <assign variable="prixTotal" expression="prixBrut"/>
