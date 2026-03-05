@@ -6,9 +6,6 @@
   <title>Document</title>
 </head>
 <body>
-  <?php
-  echo $_COOKIE['language'];
-
-  ?>
+  
 </body>
 </html>

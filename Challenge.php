@@ -1,24 +1,21 @@
 <?php
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-    $prix_the = $_POST['prix_the'];
-    $nombre_the = $_POST['nombre_the'];
-    $Etudiant = isset($_POST['etudiant']);
-
-    $prix_brut = $prix_the * $nombre_the;
-
-    if($Etudiant == true){
-        $prix_total = $prix_brut * 0.2;
-    }
-    elseif($nombre_the > 5){
-        $prix_total = $prix_brut - $nombre_the;
-    }
-    else{
-        $prix_total = $prix_brut;
-    }
-
-    echo "Le prix total de ta commande est : " . $prix_total . " DH";
+  $prix_the = $_POST['prix_the'];
+  $nombre_the = $_POST['nombre_the'];
+  $etudiant = isset($_POST['etudiant']);
+  $prix_brut = $nombre_the * $prix_the;
+  if($etudiant == true){
+    $prix_total = $prix_brut * 0.2 ;
+  }
+  elseif($nombre_the > 5){
+    $prix_total = $prix_brut - $nombre_the ;
+  }
+  else {
+   $prix_total = $prix_brut ;
+  
+  }
+  echo "Le prix total de ta commande est : " . $prix_total . " DH";
 }
 
 ?>
