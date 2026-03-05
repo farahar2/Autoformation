@@ -36,7 +36,7 @@ Prix d'un thé :
 <br><br>
 
 Nombre de thés :
-<input type="number" name="nombre_the" required>
+<inpu>
 <br><br>
 
 Êtes-vous étudiant ?

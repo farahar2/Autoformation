@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="algorithm1"/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 02:49:43 "/>
+        <attribute name="created" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjAyOjM2OjIyICI7MjQ2Mw=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC1DRE9SMDlLOzIwMjYtMDMtMDU7IjAyOjQ5OjQzICI7MTsyNTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prixThe" type="Integer" array="False" size=""/>
+            <input variable="prixThe"/>
+            <declare name="nombreThe" type="Integer" array="False" size=""/>
+            <input variable="nombreThe"/>
+            <declare name="Etudiant" type="Boolean" array="False" size=""/>
+            <input variable="Etudiant"/>
+            <declare name="prixBrut" type="Integer" array="False" size=""/>
+            <assign variable="prixBrut" expression="nombreThe * prixThe"/>
+            <declare name="prixTotal" type="Real" array="False" size=""/>
+            <if expression="Etudiant == true">
+                <then>
+                    <assign variable="prixTotal" expression="prixBrut * 0.2"/>
+                </then>
+                <else>
+                    <if expression="nombreThe &gt; 5">
+                        <then>
+                            <assign variable="prixTotal" expression="prixBrut * nombreThe"/>
+                        </then>
+                        <else>
+                            <assign variable="prixTotal" expression="prixBrut"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;le prix total de ta commande est :&quot; &amp;prixTotal&amp; &quot;DH&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
