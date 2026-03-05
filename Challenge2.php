@@ -3,7 +3,7 @@
       $age = $_POST['age'];
       if($age<12){
         $price = 20 ;
-        echo "Special: Children's Menu included!";
+        echo "Special: Children's Menu included!\n";
       }
       elseif($age>=12 && $age<=18){
         $price = 40;
