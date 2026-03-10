@@ -1,37 +1,63 @@
 <?php
-/*$i=1;
-while($i <= 10){
-echo $i++ ."<br>";
-}*/
-
-/*for($i=10;$i>=1;$i--){
-  echo $i ."<br>";
-}*/
-
-/*for($i=1;$i<=20;$i++){
-  if($i % 2 == 0){
-    echo $i ."<br>";
-  }
-}*/
-
-/*count = 0;
-for($i=1;$i<=50;$i++){
-  if($i % 2 == 0){
-    $count +=1;
-  }
+/*function greetUser($name){
+  echo "Hello " .$name. "! Ready to code?";
 }
-echo "Total even numbers:" .$count ;*/
+greetUser("Farah");
 
-/*$i = 1;
-while($i<=10){
-  $i++;
-  echo "*";
+
+function  calculateArea($width, $height){
+  return $area = $width * $height;
+}
+$totalArea = calculateArea(10, 5);
+echo "The total area is " .$totalArea. " square units.";
+*/
+
+/*function isAdult($age){
+  if($age>=18){
+    return 1;}
+  else {
+    return 0;
+}
+}
+$result = isAdult(11);
+/*switch ($result){
+case 0:
+  echo "Access Denied";
+  break;
+case 1:
+  echo "Access Granted";
+  break;
+}
+
+if($result == 0){
+  echo "Access Denied";
+}
+else {
+  echo "Access Granted";
 }*/
 
-for($i = 1; $i <= 5; $i++){
-    for($j = 1; $j <= $i; $j++){
-        echo "*";
-    }
-    echo "<br>";
+
+/*function multiplyNumbers($a, $b){
+if(is_numeric($a) && is_numeric($b)){
+  return $a * $b;
 }
+else {
+  return "Error: Invalid Input.";
+}
+}
+echo multiplyNumbers(5, 10);
+echo "<br>";
+echo multiplyNumbers(5, "apple");*/
+
+
+function manualReverse($text){
+  $chaine = " ";
+  for($i=strlen($text)-1;$i>=0;$i--){
+  $chaine = $chaine .$text[$i];
+  }
+  return $chaine;
+}
+echo manualReverse("Hello");
+
 ?>
+

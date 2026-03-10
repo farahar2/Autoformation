@@ -1,4 +1,5 @@
 <?php
+
 if($_SERVER["REQUEST_METHOD"] == "POST"){
   $prix_the = $_POST['prix_the'];
   $nombre_the = $_POST['nombre_the'];
