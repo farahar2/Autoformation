@@ -13,6 +13,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
   if(strpos($email,"@") === false){
     $error = "Email invalide";
   }
+  else{
+    $email = "";
+    $nom = "";
+  }
 }
 ?>
 <!DOCTYPE html>
