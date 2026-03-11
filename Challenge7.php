@@ -33,11 +33,9 @@ Message :
 <textarea name="message"><?php echo $message ?></textarea>
 <br><br>
 <button type="submit">Envoyer</button>
-
 </form>
 <p style="color:red;">
 <?php echo $error; ?>
 </p>
-
 </body>
 </html>
