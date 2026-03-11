@@ -6,9 +6,9 @@ $error = "";
 
 if($_SERVER["REQUEST_METHOD"] === "POST"){
 
-  $nom = htmlspecialchars($_POST["nom"]);
-  $email = htmlspecialchars($_POST["email"]);
-  $message = htmlspecialchars($_POST["message"]);
+  $nom = $_POST["nom"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
 
   if(strpos($email,"@") === false){
     $error = "Email invalide";
